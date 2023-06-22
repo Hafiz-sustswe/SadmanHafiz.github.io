@@ -37,5 +37,5 @@ form.addEventListener('submit', (e) => {
             document.querySelector("#sub").value = "Submit"
             // Change the value of the submit button back to "Submit" after the form has been submitted.
         });
-        return HTML;
+      
 })
