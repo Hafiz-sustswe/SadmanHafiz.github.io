@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Sadman Hafiz</title>
+    <link rel="stylesheet" href="./a.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/Hafiz.png" alt="Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Md Sadman Hafiz</span></h1>
+                <p>Undergrad Student | Data Science Research Intern | ML/DL Enthusiast</p>
+                <a href="media/Md_Sadman_Hafiz_Resume.pdf" class="btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Who I Am</h3>
+                    <p>I'm an undergrad student studying B.Sc.(Engg.) in Software Engineering at Shahjalal University of Science and Technology, Sylhet, Bangladesh.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What I Do</h3>
+                    <p>I love solving programming problems and developing real-life projects. I've participated in hackathons and competitions, achieving notable positions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-content">
+                <div class="skill">
+                    <h3>C/C++</h3>
+                    <div class="progress-bar"><span class="progress" style="width: 80%;"></span></div>
+                </div>
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="progress-bar"><span class="progress" style="width: 70%;"></span></div>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="img/Rea.jpg" alt="Project Image">
+                    <div class="overlay">
+                        <h3>Project Source</h3>
+                        <a href="https://github.com/Hafiz-sustswe/SWE250-Android-Project" class="icon"><i class="fab fa-github"></i></a>
+                        <!-- Add more icons/links as needed -->
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mvoneerj" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -92,30 +92,56 @@ section {
 .controls {
     position: fixed;
     z-index: 10;
-    top: 50%;
-    right: 3%;
+    top: 15%;
+    right: 12%;
+    left: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateY(-50%);
+    transform: translateY(0%);
     .control{
-        padding: 1rem;
+        padding: 0rem;
         cursor: pointer;
         background-color: var(--color-grey-4);
-        width: 55px;
-        height: 55px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: .7rem 0;
+        margin: 0;
+       
         box-shadow: var(--box-shadow-1) ;
         i {
-            font-size: 1.2rem;
+            font-size: 1 rem;
             color: var(--color-grey-2);
             pointer-events: none;
         }
+    }
+    .name{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .about{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .project{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .blog{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .contact{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .publication{
+        padding: 0.5rem;
+        font-size: 0.9rem;
     }
     .active-btn {
         background-color: var(--color-secondary);
@@ -125,10 +151,10 @@ section {
 }
 
 .theme-btn {
-    top: 5%;
-    right: 3%;
-    width: 70px;
-    height: 70px;
+    top: 6%;
+    right: 3.45%;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: var(--color-grey-4);
     cursor: pointer;
@@ -150,15 +176,16 @@ section {
 /*Header-content*/
 .header-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     min-height: 100vh;
     .left-header {
         display: flex;
         align-items: center;
         position: relative;
+        
         .h-shape {
             transition: all .4s ease-in-out;
-            width: 65%;
+            width: 85%;
             height: 100%;
             background-color: var(--color-secondary);
             position: absolute;
@@ -170,8 +197,8 @@ section {
         .image {
             border-radius: var(--br-sm-2);
             height: 100%;
-            width: 68%;
-            margin-left: 4rem;
+            width: 100%;
+            
            
             transition: all .4s ease-in-out;
             img {
@@ -179,9 +206,9 @@ section {
                 height: 100%;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
+                filter: grayscale(0);
                 &:hover{
-                    filter: grayscale(0);
+                    filter: grayscale(100%);
                 }
             }
         }
@@ -191,14 +218,18 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+        margin-top: 7rem;
+        padding-right: 0rem;
+        margin-left: 0;
+        width: 40rem;
+
         .name {
             font-size: 3rem;
             span { color: var(--color-secondary); }
             
         }
         p {
-            margin: 1.5rem 0;
+            margin: 1 rem 0;
             line-height: 2rem;
         }
     }
@@ -322,6 +353,8 @@ section {
         
     }
 }
+
+
 .stat-title {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -339,6 +372,41 @@ section {
         transform: translateX(-50%);
     }
 }
+
+.skills-section {
+    font-family: Arial, sans-serif;
+    color: var(--color-grey-5);;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.skills-section h2 {
+    grid-column: span 2;
+    font-size: 24px;
+    color: #0056b3;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skill-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;;
+}
+
+.skill-list {
+    color: var(--color-grey-2);
+    margin-left: 1rem;
+}
+
 
 /*Timeline*/
 .timeline {
@@ -465,10 +533,60 @@ section {
 //Blogs Section
 .blogs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
     .blog {
+        position: relative;
+        background-color: var(--color-grey-5);
+        border-radius: 5px;
+        box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+        transition: all .4s ease-in-out;
+        &:hover {
+            box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+            transform: translateY(-3px);
+            transition: all .4s ease-in-out;
+            img {
+                filter: grayscale(0);
+                transform: scale(1.1);
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
+            }
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            filter: grayscale(100%);
+            transition: all .4s ease-in-out;
+        }
+        .blog-text {
+            margin-top: -7px;
+            padding: 1.1rem;
+            border-top: 8px solid var(--color-secondary);
+            h4 {
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                transition: all .4s ease-in-out;
+                cursor: pointer;
+                &:hover { color: var(--color-secondary); }
+            }
+            p{
+                color: var(--color-grey-2);
+                line-height: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.blogs1 {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .blog1 {
         position: relative;
         background-color: var(--color-grey-5);
         border-radius: 5px;
@@ -493,7 +611,7 @@ section {
             filter: grayscale(100%);
             transition: all .4s ease-in-out;
         }
-        .blog-text {
+        .blog-text1 {
             margin-top: -7px;
             padding: 1.1rem;
             border-top: 8px solid var(--color-secondary);
